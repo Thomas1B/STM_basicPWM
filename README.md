@@ -14,7 +14,7 @@ Formula:
 $f_{PWM} = \frac{f_{TIM}}{(PSC \cdot ARR)}$
 
 ---
-## Example: 500 Hz PWM (TIM3)
+## Setup Example: 500 Hz PWM (TIM3)
 
 Assume:
 - Timer: TIM3  
