@@ -53,7 +53,7 @@ Range:
 | ~100%      | 1999         |
 
 ## Example Code
-```
+``` C
 HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_3);
 
 // Set 25% duty cycle
