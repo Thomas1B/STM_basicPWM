@@ -28,8 +28,8 @@ PSC = 90 - 1
 - Auto-reload (Period):
 ARR = 2000 - 1
 
-Note:  
-In STM32CubeMX, enter value - 1 because the counter starts at 0.
+**Note:**
+**In STM32CubeMX, enter value - 1 because the counter starts at 0.**
 
 ## Resulting Frequency
 
