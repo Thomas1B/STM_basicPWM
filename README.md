@@ -11,7 +11,7 @@ The PWM frequency is determined by:
 
 Formula:
 
-$f_{PWM} = \frac{f_{TIM}}{(PSC \cdot ARR)}$
+$f_{PWM} = \frac{f_{TIM}}{((PSC + 1) \cdot (ARR)+1)}$
 
 ---
 ## Setup Example: 500 Hz PWM (TIM3)
@@ -27,9 +27,6 @@ PSC = 90 - 1
 
 - Auto-reload (Period):
 ARR = 2000 - 1
-
-**Note:**
-**In STM32CubeMX, enter value - 1 because the counter starts at 0.**
 
 ## Resulting Frequency
 
