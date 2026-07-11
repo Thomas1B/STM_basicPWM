@@ -9,9 +9,11 @@ The PWM frequency is determined by:
 - Prescaler (PSC), divides down the timer's input clock before it reaches the counter
 - Auto-reload register (ARR)
 
-Formula:
+Formulae:
 
-$f_{PWM} = \frac{f_{TIM}}{((PSC + 1) \cdot (ARR)+1)}$
+$f_{counter} = \frac{f_{TIM}}{PSC+1} \quad \quad \text{(Counter Clock)} $
+
+$f_{PWM} = \frac{f_{TIM}}{(PSC + 1)(ARR+1)} = \frac{f_{counter}}{ARR+1}$
 
 ---
 ## Setup Example: 500 Hz PWM (TIM3)
@@ -30,7 +32,9 @@ ARR = 2000 - 1
 
 ## Resulting Frequency
 
-$f_{PWM} = 90,000,000 / (90 \cdot 2000) = 500 Hz$
+$f_{counter} = \frac{90MHz}{89+1} = 1MHz \quad \quad \text{(1e6 ticks per second)} $
+
+$f_{PWM} = \frac{1MHz}{1999+1} = 500MHz$
 
 ## Duty Cycle
 
