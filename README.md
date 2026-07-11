@@ -32,7 +32,7 @@ ARR = 2000 - 1
 
 ## Resulting Frequency
 
-$f_{counter} = \frac{90MHz}{89+1} = 1MHz \quad \quad \text{(1e6 ticks per second)} $
+$f_{counter} = \frac{90MHz}{89+1} = 1MHz \quad \quad \text{(1e6 ticks per second or 1us per tick)} $
 
 $f_{PWM} = \frac{1MHz}{1999+1} = 500MHz$
 
