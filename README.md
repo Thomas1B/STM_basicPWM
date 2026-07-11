@@ -6,7 +6,7 @@ Basic example of setting up a PWM output.
 
 The PWM frequency is determined by:
 - Timer clock (f_TIM) (APB1 or APB2)
-- Prescaler (PSC)
+- Prescaler (PSC), divides down the timer's input clock before it reaches the counter
 - Auto-reload register (ARR)
 
 Formula:
